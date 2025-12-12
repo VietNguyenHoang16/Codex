@@ -37,7 +37,7 @@ export default async function AdminDashboard() {
         <div className="container px-4 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold">Admin Dashboard</h1>
           <div className="flex items-center space-x-4">
-            <span className="text-sm text-muted-foreground">{session.user?.email}</span>
+            <span className="text-sm text-muted-foreground">{session.email}</span>
             <Button asChild variant="outline" size="sm">
               <Link href="/">Về trang chủ</Link>
             </Button>
