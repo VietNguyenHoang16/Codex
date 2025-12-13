@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, Suspense } from "react"
 import { useRouter } from "next/navigation"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -124,7 +124,9 @@ export default function AdminLoginPage() {
             </Button>
           </form>
 
-          <OAuthButtons />
+          <Suspense fallback={<div className="text-sm text-muted-foreground text-center py-4">Đang tải...</div>}>
+            <OAuthButtons />
+          </Suspense>
         </CardContent>
       </Card>
     </div>
