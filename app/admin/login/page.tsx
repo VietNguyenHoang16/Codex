@@ -125,7 +125,7 @@ export default function AdminLoginPage() {
           </form>
 
           <Suspense fallback={<div className="text-sm text-muted-foreground text-center py-4">Đang tải...</div>}>
-            <OAuthButtons />
+          <OAuthButtons />
           </Suspense>
         </CardContent>
       </Card>

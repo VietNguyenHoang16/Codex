@@ -186,7 +186,7 @@ function LoginForm() {
           </form>
 
           <Suspense fallback={<div className="text-sm text-muted-foreground text-center py-4">Đang tải...</div>}>
-            <OAuthButtons />
+          <OAuthButtons />
           </Suspense>
 
           <div className="text-center text-sm text-muted-foreground mt-4">

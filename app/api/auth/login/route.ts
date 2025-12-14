@@ -4,6 +4,8 @@ import bcrypt from "bcryptjs"
 import { SignJWT } from "jose"
 import { z } from "zod"
 
+// Login route - handles user authentication
+
 const secret = new TextEncoder().encode(
   process.env.NEXTAUTH_SECRET || "codex-studio-secret-key-2024-change-in-production"
 )
